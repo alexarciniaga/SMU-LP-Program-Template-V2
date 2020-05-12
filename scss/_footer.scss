@@ -1,0 +1,28 @@
+footer {
+    background-color: $denim-blue;
+    padding:12px 48px;
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .container1 {
+        padding:16px 0;
+        justify-self:center;
+        justify-self: left;
+        img {
+            max-width:256px;
+            height:auto;
+        }
+    }
+    .container2 {
+        align-self:center;
+        justify-self: right;
+    }
+    @media screen and (max-width:991px) {
+        >.grid {
+            grid-template-columns: 1fr;
+            .container1,.container2 {
+                justify-self: center;
+            }
+        }
+    }
+}
